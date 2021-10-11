@@ -1,4 +1,4 @@
-package com.pb.tkachuk;
+package com.pb.tkachuk.hw1;
 
 public class HelloWorld {
 
