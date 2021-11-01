@@ -17,13 +17,15 @@ public class CapitalLetter {
 
     }
 
-        static String capitaliseFirstLetter(String name){
-            return name.substring(0, 1).toUpperCase() + name.substring(1);  // возвращает новую строку
-                                                                           // которая является подстрокой данной строки.
-                                                                          // Подстрока начинается с символа, заданного индексом,
-                                                                         // и продолжается до второго аргумента .
+                public static String capitaliseFirstLetter(String str) {
+                    String[] arr = str.split(" ");
+                    for (int i = 0; i < arr.length; i++) {
+                        arr[i] = Character.toUpperCase(arr[i].charAt(0)) + arr[i].substring(1);
+                    }
+                    return String.join(" ", arr);
+                }
 
         }
-    }
+
 
 
